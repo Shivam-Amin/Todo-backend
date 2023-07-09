@@ -61,6 +61,7 @@ const updateTask = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
+      message: "Task Updated!",
       task
     })
   } catch (error) {
@@ -78,6 +79,7 @@ const deleteTask = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
+      message: "Task Deleted!",
       task
     })
   } catch (error) {
